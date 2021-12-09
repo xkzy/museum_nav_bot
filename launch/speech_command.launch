@@ -1,0 +1,46 @@
+<launch>
+
+    <!--
+    Args with no default attribute are not optional
+    -->
+    <arg name="input" default=":default"/>
+    <arg name="hmm" default=":default"/>
+    <arg name="dict" default=":default"/>
+    <arg name="lm" default=":default"/>
+    <arg name="device" default="" />
+    <arg name="loop_rate" default="100" />
+    
+    <!--
+    Node for sound playback
+    -->
+    
+  <node name="soundplay_node" pkg="museum_nav_bot" type="soundplay_node.py">
+    <param name="device" value="$(arg device)" />
+    <param name="loop_rate" value="$(arg loop_rate)" />
+  </node>
+    <!--
+    Node for excute command
+    -->
+	<node
+		name="execute_control"
+		pkg="museum_nav_bot"
+		type="execute_commands.py"
+        output="screen"
+        >
+	</node>
+
+    <!--
+    Node for publishing speech inputs
+    -->
+    <node
+        name="reconizer"
+        pkg="museum_nav_bot"
+        type="k_reconizer.py"
+        output="screen"
+        >
+	<param name="lm" value="$(arg lm)"/>
+        <param name="dict" value="$(arg dict)"/>
+        <param name="hmm" value="$(arg hmm)"/>
+        <param name="input" value="$(arg input)"/>
+    </node>
+</launch>
