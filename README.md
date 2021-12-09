@@ -3,7 +3,7 @@
 
 This ROS package implements SLAM on a 2 wheeled differential drive robot to map an indoor environment. 
 
-[Demo Video](https://youtu.be/jbd2p1llsqA) 
+[Demo Video](https://youtu.be/9I4IbfUj-wQ) 
 
 ## Installation
 1. Build package from source: navigate to the source folder of your catkin workspace and build this package using:
