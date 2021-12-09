@@ -2,8 +2,10 @@
 # museum_nav_bot
 
 This ROS package implements SLAM on a 2 wheeled differential drive robot to map an indoor environment. 
-
+![zone in original map](https://github.com/xkzy/museum_nav_bot/raw/main/screenshots/museum_map.png)
+![SLAM map Screenshot](https://github.com/xkzy/museum_nav_bot/raw/main/screenshots/Kazam_screenshot_00000.png)
 [Demo Video](https://youtu.be/9I4IbfUj-wQ) 
+## this project map create with
 
 ## Installation
 1. Build package from source: navigate to the source folder of your catkin workspace and build this package using:
