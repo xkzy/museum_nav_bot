@@ -36,7 +36,7 @@ More instructions can be found on [ROS website](http://wiki.ros.org/ROS/Installa
 
 The package uses [slam_gmapping](http://wiki.ros.org/slam_gmapping) to map the environment. For the purpose of this demonstration, we use the Gazebo simulation environment to move around the robot. 
 
-![SLAM Screenshot](https://github.com/xkzy/museum_nav_bot/raw/master/screenshots/slam_gmapping_resized.gif)
+![SLAM Screenshot](https://github.com/xkzy/museum_nav_bot/raw/main/screenshots/slam_gmapping_resized.gif)
 
 1. Load the robot in the Gazebo environment. Default model is the museum. You can change this from ```/worlds/mybot.world```. To continue with default model:
 	```
