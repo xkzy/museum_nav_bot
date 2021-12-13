@@ -95,7 +95,7 @@ This package uses the [pocketsphinx-python](https://github.com/cmusphinx/pockets
 	```
 	$ roslaunch museum_nav_bot speech_command.launch
 	```
-4. To move to a goal, Speak to the microphone with command like "goto animal zone.".  
+4. To move to a goal, Speak to the microphone with command like "'OH' goto animal zone.".  
 
 ##  [Optional] Joystick Configuration 
 
